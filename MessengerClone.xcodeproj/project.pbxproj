@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C3427C8627297E2F0045A834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427C8527297E2F0045A834 /* AppDelegate.swift */; };
 		C3427C8827297E2F0045A834 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427C8727297E2F0045A834 /* SceneDelegate.swift */; };
-		C3427C8A27297E2F0045A834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427C8927297E2F0045A834 /* ViewController.swift */; };
 		C3427C8D27297E2F0045A834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3427C8B27297E2F0045A834 /* Main.storyboard */; };
 		C3427C9027297E2F0045A834 /* MessengerClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3427C8E27297E2F0045A834 /* MessengerClone.xcdatamodeld */; };
 		C3427C9227297E300045A834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3427C9127297E300045A834 /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		C3427CA027297E300045A834 /* MessengerCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427C9F27297E300045A834 /* MessengerCloneTests.swift */; };
 		C3427CAA27297E300045A834 /* MessengerCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427CA927297E300045A834 /* MessengerCloneUITests.swift */; };
 		C3427CAC27297E300045A834 /* MessengerCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427CAB27297E300045A834 /* MessengerCloneUITestsLaunchTests.swift */; };
+		C3427D0D272F6C4B0045A834 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D0C272F6C4B0045A834 /* RegisterViewController.swift */; };
+		C3427D0F272F6C580045A834 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D0E272F6C580045A834 /* LoginViewController.swift */; };
+		C3427D11272F6CCE0045A834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D10272F6CCE0045A834 /* ProfileViewController.swift */; };
+		C3427D13272F6CE10045A834 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D12272F6CE10045A834 /* NewConversationViewController.swift */; };
+		C3427D15272F6D1D0045A834 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D14272F6D1D0045A834 /* ConversationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		C3427C8227297E2F0045A834 /* MessengerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3427C8527297E2F0045A834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3427C8727297E2F0045A834 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3427C8927297E2F0045A834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3427C8C27297E2F0045A834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3427C8F27297E2F0045A834 /* MessengerClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessengerClone.xcdatamodel; sourceTree = "<group>"; };
 		C3427C9127297E300045A834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		C3427CA527297E300045A834 /* MessengerCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3427CA927297E300045A834 /* MessengerCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneUITests.swift; sourceTree = "<group>"; };
 		C3427CAB27297E300045A834 /* MessengerCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3427D0C272F6C4B0045A834 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C3427D0E272F6C580045A834 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C3427D10272F6CCE0045A834 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C3427D12272F6CE10045A834 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		C3427D14272F6D1D0045A834 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,13 @@
 		C3427C8427297E2F0045A834 /* MessengerClone */ = {
 			isa = PBXGroup;
 			children = (
-				C3427C8527297E2F0045A834 /* AppDelegate.swift */,
+				C3427D03272F6A260045A834 /* Controllers */,
+				C3427D02272F6A160045A834 /* View Models */,
+				C3427D01272F6A060045A834 /* Resources */,
 				C3427C8727297E2F0045A834 /* SceneDelegate.swift */,
-				C3427C8927297E2F0045A834 /* ViewController.swift */,
-				C3427C8B27297E2F0045A834 /* Main.storyboard */,
+				C3427C8527297E2F0045A834 /* AppDelegate.swift */,
+				C3427D00272F69DA0045A834 /* Views */,
 				C3427C9127297E300045A834 /* Assets.xcassets */,
-				C3427C9327297E300045A834 /* LaunchScreen.storyboard */,
 				C3427C9627297E300045A834 /* Info.plist */,
 				C3427C8E27297E2F0045A834 /* MessengerClone.xcdatamodeld */,
 			);
@@ -128,6 +137,41 @@
 				C3427CAB27297E300045A834 /* MessengerCloneUITestsLaunchTests.swift */,
 			);
 			path = MessengerCloneUITests;
+			sourceTree = "<group>";
+		};
+		C3427D00272F69DA0045A834 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3427C9327297E300045A834 /* LaunchScreen.storyboard */,
+				C3427C8B27297E2F0045A834 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3427D01272F6A060045A834 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3427D02272F6A160045A834 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C3427D03272F6A260045A834 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3427D0C272F6C4B0045A834 /* RegisterViewController.swift */,
+				C3427D0E272F6C580045A834 /* LoginViewController.swift */,
+				C3427D10272F6CCE0045A834 /* ProfileViewController.swift */,
+				C3427D12272F6CE10045A834 /* NewConversationViewController.swift */,
+				C3427D14272F6D1D0045A834 /* ConversationViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3427C8A27297E2F0045A834 /* ViewController.swift in Sources */,
+				C3427D0F272F6C580045A834 /* LoginViewController.swift in Sources */,
+				C3427D15272F6D1D0045A834 /* ConversationViewController.swift in Sources */,
+				C3427D13272F6CE10045A834 /* NewConversationViewController.swift in Sources */,
+				C3427D0D272F6C4B0045A834 /* RegisterViewController.swift in Sources */,
 				C3427C9027297E2F0045A834 /* MessengerClone.xcdatamodeld in Sources */,
+				C3427D11272F6CCE0045A834 /* ProfileViewController.swift in Sources */,
 				C3427C8627297E2F0045A834 /* AppDelegate.swift in Sources */,
 				C3427C8827297E2F0045A834 /* SceneDelegate.swift in Sources */,
 			);
