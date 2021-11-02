@@ -11,7 +11,6 @@
         <!--Login View Controller-->
         <scene sceneID="NDR-Ie-D4G">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YsA-P6-3xd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="L6O-qa-Mwo" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kEJ-ZD-zbW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -96,13 +95,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsA-P6-3xd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="112.5"/>
         </scene>
         <!--Register-->
         <scene sceneID="5AC-Rt-aVc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rBP-LH-UML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="E4t-BX-HjT" customClass="RegisterViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C8E-EA-NIp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -157,6 +156,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerAction:" destination="E4t-BX-HjT" eventType="touchUpInside" id="99w-eq-Bt3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PMf-8b-LVm"/>
@@ -183,16 +185,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="JvP-cn-2Jd"/>
                     <connections>
+                        <outlet property="emailLabel" destination="ok6-WX-Jdg" id="L1t-Rz-1nc"/>
+                        <outlet property="firstNameLabel" destination="twc-bj-7Kt" id="lG0-8j-Dcm"/>
                         <outlet property="imageView" destination="vxz-4d-qeh" id="NED-Ua-xdr"/>
+                        <outlet property="lastNameLabel" destination="vaI-iN-klT" id="fAs-Jg-Ln7"/>
+                        <outlet property="passwordLabel" destination="kMT-RG-Jgy" id="e7d-Y5-XSV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBP-LH-UML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2623.1884057971015" y="112.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cJe-aK-K5X">
             <objects>
-                <viewController id="23p-iX-nzk" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="23p-iX-nzk" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TYS-8r-2Vg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,7 +290,7 @@
         <!--Login View Controller-->
         <scene sceneID="MIR-lQ-HOS">
             <objects>
-                <viewController id="vjC-3L-063" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vjC-3L-063" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F9Y-HY-Ucp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +381,7 @@
         <!--Login View Controller-->
         <scene sceneID="xIZ-n5-lXP">
             <objects>
-                <viewController id="shb-XQ-jmU" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="shb-XQ-jmU" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWq-L3-3pr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,7 +472,7 @@
         <!--Login View Controller-->
         <scene sceneID="c6f-TS-xj2">
             <objects>
-                <viewController id="Jc9-UB-hxs" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jc9-UB-hxs" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Azd-lU-H6F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,7 +563,7 @@
         <!--Login View Controller-->
         <scene sceneID="FZN-gS-9t2">
             <objects>
-                <viewController id="bVb-sD-Yna" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bVb-sD-Yna" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HyO-Df-dVS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -647,7 +654,7 @@
         <!--Login View Controller-->
         <scene sceneID="QBs-hd-9P5">
             <objects>
-                <viewController id="SgE-ju-uWO" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SgE-ju-uWO" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pS5-ed-Tud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,7 +745,7 @@
         <!--Login View Controller-->
         <scene sceneID="3ti-ZK-fpA">
             <objects>
-                <viewController id="WMZ-uy-KCC" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WMZ-uy-KCC" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K3S-5X-yHG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -829,7 +836,7 @@
         <!--Login-->
         <scene sceneID="BAN-wO-9Ad">
             <objects>
-                <viewController id="HQq-dc-drq" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HQq-dc-drq" customClass="LoginViewController" customModule="MessengerClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRj-VX-ALl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -859,6 +866,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Log In">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginAction:" destination="HQq-dc-drq" eventType="touchUpInside" id="tcd-Wb-YgW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlW-NO-PF8">
                                 <rect key="frame" x="50" y="528" width="314" height="50"/>
@@ -919,6 +929,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="k6y-Xq-RD6" id="eja-yr-tJ4"/>
+                        <outlet property="passwordLabel" destination="Un9-cv-Jc7" id="3tD-xe-Cl4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g5-O4-kOa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

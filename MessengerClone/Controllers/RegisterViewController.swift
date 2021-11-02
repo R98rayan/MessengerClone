@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+
 
 
 extension UIImageView {
@@ -20,6 +23,11 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var firstNameLabel: UITextField!
+    @IBOutlet weak var lastNameLabel: UITextField!
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var passwordLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +37,19 @@ class RegisterViewController: UIViewController {
         imageView.addGestureRecognizer(tap)
         imageView.isUserInteractionEnabled = true
 
+    }
+    
+    @IBAction func registerAction(_ sender: Any) {
+        
+        FirebaseAuth.Auth.auth().createUser(withEmail: emailLabel.text!, password: passwordLabel.text!, completion: { authResult , error  in
+            guard let result = authResult, error == nil else {
+                print("Error creating user")
+                return
+            }
+            let user = result.user
+            print("Created User: \(user)")
+        })
+        
     }
     
     @objc func tappedMe() {
