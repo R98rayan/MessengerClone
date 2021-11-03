@@ -29,17 +29,29 @@ class LoginViewController: UIViewController {
             }
             let user = result.user
             print("logged in user: \(user)")
+//            self.navigationController?.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         })
         
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func fastAction(_ sender: Any) {
+        FirebaseAuth.Auth.auth().signIn(withEmail: "r98rayan@gmail.com", password: "l1234531", completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("Failed to log in user with email \(self.emailLabel.text!)")
+                return
+            }
+            let user = result.user
+            print("logged in user: \(user)")
+            print(user)
+//            self.navigationController?.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
+            
+            
+//            if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? AuthenticationNavigationController {
+//            
+//                navigationController.conversationViewController!.dismiss(animated: true, completion: nil)
+//            }
+        })
     }
-    */
-
 }

@@ -1,29 +1,32 @@
-//
-//  ConversationViewController.swift
-//  MessengerClone
-//
-//  Created by administrator on 01/11/2021.
-//
-
 import UIKit
+import FirebaseAuth
 
 class ConversationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .red
+        do {
+           try FirebaseAuth.Auth.auth().signOut()
+        }
+        catch {}
+        DatabaseManger.shared.test() // call test!
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+  
+        validateAuth()
     }
-    */
-
+        
+    private func validateAuth(){
+        print("check if there is a user...")
+        // current user is set automatically when you log a user in
+        if FirebaseAuth.Auth.auth().currentUser == nil {
+            print("there is no user, pushing the Login View!")
+            self.performSegue(withIdentifier: "AuthenticationSegue", sender: self)
+        }
+    }
+    
 }

@@ -24,6 +24,8 @@
 		C3427D11272F6CCE0045A834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D10272F6CCE0045A834 /* ProfileViewController.swift */; };
 		C3427D13272F6CE10045A834 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D12272F6CE10045A834 /* NewConversationViewController.swift */; };
 		C3427D15272F6D1D0045A834 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3427D14272F6D1D0045A834 /* ConversationViewController.swift */; };
+		C398BBD02731B1C700EFF5A6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398BBCF2731B1C700EFF5A6 /* DatabaseManager.swift */; };
+		C398BBD22732781D00EFF5A6 /* AuthenticationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C398BBD12732781D00EFF5A6 /* AuthenticationNavigationController.swift */; };
 		DB1BD2422FA6117FD892975C /* Pods_MessengerClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D34409801226C2B7D2619 /* Pods_MessengerClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		C3427D10272F6CCE0045A834 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C3427D12272F6CE10045A834 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		C3427D14272F6D1D0045A834 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		C398BBCF2731B1C700EFF5A6 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		C398BBD12732781D00EFF5A6 /* AuthenticationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationNavigationController.swift; sourceTree = "<group>"; };
 		C86D34409801226C2B7D2619 /* Pods_MessengerClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF987D6C4F0DF3ABA6B7F0B7 /* Pods_MessengerClone_MessengerCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerClone_MessengerCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,11 +155,10 @@
 		C3427C8427297E2F0045A834 /* MessengerClone */ = {
 			isa = PBXGroup;
 			children = (
+				C398BBCE2731B13E00EFF5A6 /* Models */,
 				C3427D03272F6A260045A834 /* Controllers */,
 				C3427D02272F6A160045A834 /* View Models */,
 				C3427D01272F6A060045A834 /* Resources */,
-				C3427C8727297E2F0045A834 /* SceneDelegate.swift */,
-				C3427C8527297E2F0045A834 /* AppDelegate.swift */,
 				C3427D00272F69DA0045A834 /* Views */,
 				C3427C9127297E300045A834 /* Assets.xcassets */,
 				C3427C9627297E300045A834 /* Info.plist */,
@@ -194,6 +197,9 @@
 		C3427D01272F6A060045A834 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C398BBCF2731B1C700EFF5A6 /* DatabaseManager.swift */,
+				C3427C8527297E2F0045A834 /* AppDelegate.swift */,
+				C3427C8727297E2F0045A834 /* SceneDelegate.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,8 +219,16 @@
 				C3427D10272F6CCE0045A834 /* ProfileViewController.swift */,
 				C3427D12272F6CE10045A834 /* NewConversationViewController.swift */,
 				C3427D14272F6D1D0045A834 /* ConversationViewController.swift */,
+				C398BBD12732781D00EFF5A6 /* AuthenticationNavigationController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C398BBCE2731B13E00EFF5A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +479,8 @@
 				C3427D11272F6CCE0045A834 /* ProfileViewController.swift in Sources */,
 				C3427C8627297E2F0045A834 /* AppDelegate.swift in Sources */,
 				C3427C8827297E2F0045A834 /* SceneDelegate.swift in Sources */,
+				C398BBD02731B1C700EFF5A6 /* DatabaseManager.swift in Sources */,
+				C398BBD22732781D00EFF5A6 /* AuthenticationNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
