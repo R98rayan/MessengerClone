@@ -1012,20 +1012,43 @@
                                     <constraint firstAttribute="width" constant="150" id="eS4-HM-PIc"/>
                                 </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bDL-8b-hje">
+                                <rect key="frame" x="0.0" y="294" width="414" height="112"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BLg-Vf-DgZ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BLg-Vf-DgZ" id="HCF-Hm-I5J">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rOu-Di-mOv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EwY-pn-n8y" firstAttribute="top" secondItem="rOu-Di-mOv" secondAttribute="top" constant="50" id="7ug-tN-hXd"/>
+                            <constraint firstItem="bDL-8b-hje" firstAttribute="leading" secondItem="rOu-Di-mOv" secondAttribute="leading" id="BqN-4M-yOq"/>
                             <constraint firstItem="EwY-pn-n8y" firstAttribute="centerX" secondItem="SFi-vf-c7C" secondAttribute="centerX" id="Evk-Gx-dBS"/>
+                            <constraint firstItem="bDL-8b-hje" firstAttribute="centerX" secondItem="SFi-vf-c7C" secondAttribute="centerX" id="KwG-Q7-lw5"/>
+                            <constraint firstItem="bDL-8b-hje" firstAttribute="trailing" secondItem="rOu-Di-mOv" secondAttribute="trailing" id="MHN-wP-PsE"/>
+                            <constraint firstItem="rOu-Di-mOv" firstAttribute="bottom" secondItem="bDL-8b-hje" secondAttribute="bottom" constant="407" id="qUZ-18-KHk"/>
+                            <constraint firstItem="bDL-8b-hje" firstAttribute="top" secondItem="EwY-pn-n8y" secondAttribute="bottom" constant="50" id="yqe-BQ-zkz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="f3U-iL-Hso"/>
                     <navigationItem key="navigationItem" id="gJz-kF-zbW"/>
+                    <connections>
+                        <outlet property="tableView" destination="bDL-8b-hje" id="glz-KV-kbM"/>
+                        <segue destination="Iew-bE-XZZ" kind="show" identifier="LogoutSegue" id="xY9-ZE-zyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4VA-52-Fi4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="-163"/>
+            <point key="canvasLocation" x="637.68115942028987" y="-163.39285714285714"/>
         </scene>
         <!--Authentication Navigation Controller-->
         <scene sceneID="9Zg-MV-iP6">
@@ -1065,6 +1088,9 @@
             <point key="canvasLocation" x="97" y="-898"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xY9-ZE-zyc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Coach-Avator" width="1920" height="1280"/>
         <image name="FacebookMessengerLogo" width="3000" height="2000"/>
